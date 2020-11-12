@@ -1,33 +1,41 @@
-
-/*aspectos generales: bordes y color de fondo de calculadora*/
-.calculadora {
-    border: 3px blue ridge;
-    width: 250px;
-    text-align: center;
-    background-color: #55555c;
-}
-
-/*pantalla de visualización: bordes, posición, color de fondo, estilo letra.*/
-#textoPantalla {
-    width: 185px;
-    border: 2px black solid;
-    text-align: right;
-    position: relative;
-    left: 23px;
-    padding: 0px 5px;
-    background-color: white;
-    font-family: "courier new";
-    overflow: hidden;
-}
-
-/*botones normales: anchura y margen*/
-.calculadora [type=button] {
-    width: 35px;
+* {
+    margin: auto;
     padding: 0;
+    text-align: center
 }
 
-/*botones especiales*/
-.calculadora input.largo {
-    color: red;
-    width: 60px;
+#cabecera {
+    font: bold 1.3em verdana;
+    background-color: #feffe4;
+}
+
+h1 {
+    text-align: center;
+    padding: 0.5em
+}
+
+#menu {
+    float: left;
+    width: 25%;
+    background-color: #e3f2ff;
+}
+
+#menu img {
+    width: 35%;
+    margin: 5%;
+    cursor: pointer;
+}
+
+#principal {
+    float: left;
+    width: 75%;
+}
+
+#visor {
+    width: 60%;
+    margin: 10%
+}
+
+#visor img {
+    width: 100%
 }

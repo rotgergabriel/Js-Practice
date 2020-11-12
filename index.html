@@ -1,56 +1,32 @@
-<!DOCTYPE html>
+<!-DOCTYPE HTML>
 
-<html lang="en">
+<html lang="es">
     <head>
-        <title>Practice JS</title>
+        <title>Visor de imágenes</title>
+        <meta charset="utf-8">
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
-    <body>
-        <h1>Place for Practice - JavaScript</h1>
-        <h2>Calculator</h2>
-            <div class="calculadora">
-                <form action="#" name="calculadora" id="calculadora">
-                <p id="textoPantalla">0</p>
-                <p>
-                    <input type="button" class="largo" value="Retr" onclick="retro()"   />
-                    <input type="button" class="largo" value="CE" onclick="borradoParcial()"  />
-                    <input type="button" class="largo" value="C" onclick="borradoTotal()"  />
-                    </p>
-                    <p>
-                    <input type="button" value="7" id="seven" onclick="numero('7')" />
-                    <input type="button" value="8" onclick="numero('8')" />
-                    <input type="button" value="9" onclick="numero('9')" />
-                    <input type="button" value="/" onclick="operar('/')"  />
-                    <input type="button" value="Raiz" onclick="raizc()" />
-                    </p>
-                    <p>
-                    <input type="button" value="4" onclick="numero('4')" />
-                    <input type="button" value="5" onclick="numero('5')" />
-                    <input type="button" value="6" onclick="numero('6')" />
-                    <input type="button" value="*" onclick="operar('*')" />
-                    <input type="button" value="%" onclick="porcent()" />
-                    </p>
-                    <p>
-                    <input type="button" value="1" onclick="numero('1')" />
-                    <input type="button" value="2" onclick="numero('2')" />
-                    <input type="button" value="3" onclick="numero('3')" />
-                    <input type="button" value="-" onclick="operar('-')" />
-                    <input type="button" value="1/x" onclick="inve()" />
-                    </p>
-                    <p>
-                    <input type="button" value="0" onclick="numero('0')" />
-                    <input type="button" value="+/-" onclick="opuest()" />
-                    <input type="button" value="." onclick="numero('.')" />
-                    <input type="button" value="+" onclick="operar('+')" />
-                    <input type="button" value="=" onclick="igualar()" />
-                    </p>
-                </form>
-            </div>
-
-        <div class="menu">
-            <img src="" alt="">
+<body>
+    <div id="cabecera">
+    <h1>Visor de imágenes</h1>
         </div>
-        <!-- <input type="button" value="usar calculadora" onclick="open('ej10.html','calculadora', 'width=270,height=275,toolbar=no, statusbar=no,menubar=no,titlebar=no')" /> -->
-        <script src="./assets/index.js"></script>
+                <div id="menu">
+                    <img src='./assets/img/foto1.jpg' alt='1. India - Agra - El Taj Majal.' name='fotos1' onclick="mifoto(1)"/>
+                    <img src='foto2.jpg' alt='2. Albania - Region de Ballsh.' name='fotos2' onclick="mifoto(2)"/>
+                    <img src='foto3.jpg' alt='3. Atenas- Partenón.' name='fotos3' onclick="mifoto(3)"/>
+                    <img src='foto4.jpg' alt='4. Bélgica - Amberes.' name='fotos4' onclick="mifoto(4)"/>
+                    <img src='foto5.jpg' alt='5. Costa Rica - Parque nacional de la Amistad.' name='fotos5' onclick="mifoto(5)"/>
+                    <img src='foto6.jpg' alt='6. Egipto - Templo de Abu Simbel.' name='fotos6' onclick="mifoto(6)"/>
+                    <img src='foto7.jpg' alt='7. España - Albacete ciudad.' name='fotos7' onclick="mifoto(7)"/>
+                    <img src='foto8.jpg' alt='8. España - Tarragona - Acueducto romano.' name='fotos8' onclick="mifoto(8)"/>
+                </div>
+                <div id="principal">
+                        <div id="visor">
+                            <img src='foto1.jpg' alt='1. India - Agra - El Taj Majal.' name='fotoVisor'/>
+                        <div id="titulo">1. India - Agra - El Taj Majal.
+                </div>
+        </div>
+    </div>
+    <script src="./assets/index.js"></script>
     </body>
 </html>
